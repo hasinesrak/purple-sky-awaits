@@ -78,11 +78,11 @@ const Planet: React.FC<PlanetProps> = ({
 }) => {
   return (
     <div 
-      className="absolute"
+      className="absolute animate-being-pulled"
       style={{ 
         left: positionX, 
         top: positionY,
-        animation: `float ${orbitDuration}s ease-in-out infinite`,
+        animation: `float ${orbitDuration}s ease-in-out infinite, being-pulled 30s ease-in-out infinite`,
         transform: `translateY(0px)`,
       }}
     >

@@ -133,6 +133,17 @@ export default {
             opacity: "0.3"
           }
         },
+        "being-pulled": {
+          "0%": { 
+            transform: "translate(0, 0) scale(1) rotate(0deg)",
+          },
+          "50%": {
+            transform: "translate(calc((50vw - 50%) / 2), calc((50vh - 50%) / 2)) scale(0.95) rotate(5deg)",
+          },
+          "100%": { 
+            transform: "translate(0, 0) scale(1) rotate(0deg)",
+          }
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -145,6 +156,7 @@ export default {
         rotate: "rotate 20s linear infinite",
         orbit: "orbit 10s linear infinite",
         "being-sucked": "being-sucked 10s ease-in-out infinite alternate",
+        "being-pulled": "being-pulled 30s ease-in-out infinite alternate",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
