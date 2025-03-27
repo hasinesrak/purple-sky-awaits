@@ -56,7 +56,7 @@ const Index = () => {
           loaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
         )}>
           {/* Label */}
-          <div className="inline-block mb-6 glass-card px-4 py-1.5 rounded-full">
+          <div className="inline-block mb-6 glass-card px-4 py-1.5 rounded-full backdrop-blur-xl">
             <span className="text-xs sm:text-sm font-medium tracking-wide text-light-purple">Coming Soon</span>
           </div>
           
@@ -78,12 +78,14 @@ const Index = () => {
             My portfolio website is currently under construction. I'm working on something amazing for you.
           </p>
           
-          {/* Avatar */}
+          {/* Avatar - positioned more to the left */}
           <div className={cn(
-            "mb-10 transition-all duration-1000 delay-300",
+            "mb-10 transition-all duration-1000 delay-300 flex justify-center",
             loaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           )}>
-            <Avatar />
+            <div className="-translate-x-6">
+              <Avatar />
+            </div>
           </div>
           
           {/* Email signup */}
@@ -105,11 +107,11 @@ const Index = () => {
         </div>
       </div>
       
-      {/* Gradient overlays */}
+      {/* Gradient overlays with improved blur */}
       <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-dark to-transparent z-0"></div>
       <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-dark to-transparent z-0"></div>
-      <div className="absolute -top-[30%] -right-[20%] w-[70%] h-[70%] bg-purplish-blue/10 rounded-full blur-[120px] z-0"></div>
-      <div className="absolute -bottom-[30%] -left-[20%] w-[70%] h-[70%] bg-glow-purple/10 rounded-full blur-[120px] z-0"></div>
+      <div className="absolute -top-[30%] -right-[20%] w-[70%] h-[70%] bg-purplish-blue/10 rounded-full blur-[140px] z-0"></div>
+      <div className="absolute -bottom-[30%] -left-[20%] w-[70%] h-[70%] bg-glow-purple/10 rounded-full blur-[140px] z-0"></div>
     </div>
   );
 };
