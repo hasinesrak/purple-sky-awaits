@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -118,6 +119,20 @@ export default {
           "0%": { transform: "rotate(0deg) translateX(20px) rotate(0deg)" },
           "100%": { transform: "rotate(360deg) translateX(20px) rotate(-360deg)" },
         },
+        "being-sucked": {
+          "0%": { 
+            transform: "scale(1) rotate(0deg) translateY(0)",
+            opacity: "1"
+          },
+          "60%": { 
+            transform: "scale(0.7) rotate(10deg) translateY(40px)",
+            opacity: "0.7"
+          },
+          "100%": { 
+            transform: "scale(0.2) rotate(25deg) translateY(80px)",
+            opacity: "0.3"
+          }
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -129,6 +144,7 @@ export default {
         shimmer: "shimmer 2.5s infinite linear",
         rotate: "rotate 20s linear infinite",
         orbit: "orbit 10s linear infinite",
+        "being-sucked": "being-sucked 10s ease-in-out infinite alternate",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

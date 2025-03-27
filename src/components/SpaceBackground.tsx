@@ -63,15 +63,6 @@ const SpaceBackground: React.FC = () => {
       {planets.map((planet, index) => (
         <Planet key={index} {...planet} />
       ))}
-
-      <style>
-        {`
-          @keyframes orbit {
-            from { transform: rotate(0deg) translateX(20px) rotate(0deg); }
-            to { transform: rotate(360deg) translateX(20px) rotate(-360deg); }
-          }
-        `}
-      </style>
     </div>
   );
 };

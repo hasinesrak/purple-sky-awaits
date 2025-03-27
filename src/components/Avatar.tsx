@@ -46,7 +46,7 @@ const Avatar: React.FC = () => {
       className="relative transition-all duration-200 ease-out"
       style={{ transformStyle: "preserve-3d" }}
     >
-      <div className="relative w-64 h-64 sm:w-80 sm:h-80 animate-float">
+      <div className="relative w-64 h-64 sm:w-80 sm:h-80 animate-being-sucked">
         {/* Avatar */}
         <div className="absolute inset-0 flex items-center justify-center">
           <svg 
@@ -74,7 +74,7 @@ const Avatar: React.FC = () => {
             <rect x="90" y="130" width="20" height="15" fill="#6366F1" />
             
             {/* Arms */}
-            <rect x="130" y="138" width="45" height="15" rx="5" fill="#6366F1" className="origin-left animate-wave" />
+            <rect x="130" y="138" width="45" height="15" rx="5" fill="#6366F1" />
             <rect x="25" y="138" width="45" height="15" rx="5" fill="#6366F1" />
           </svg>
         </div>

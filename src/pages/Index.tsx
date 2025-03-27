@@ -78,12 +78,12 @@ const Index = () => {
             My portfolio website is currently under construction. I'm working on something amazing for you.
           </p>
           
-          {/* Avatar - positioned more to the left */}
+          {/* Avatar - positioned above the black hole */}
           <div className={cn(
             "mb-10 transition-all duration-1000 delay-300 flex justify-center",
             loaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           )}>
-            <div className="-translate-x-6">
+            <div className="relative -translate-y-10">
               <Avatar />
             </div>
           </div>
