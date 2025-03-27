@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -111,6 +110,14 @@ export default {
           "0%": { backgroundPosition: "-500px 0" },
           "100%": { backgroundPosition: "500px 0" },
         },
+        rotate: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        orbit: {
+          "0%": { transform: "rotate(0deg) translateX(20px) rotate(0deg)" },
+          "100%": { transform: "rotate(360deg) translateX(20px) rotate(-360deg)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -120,6 +127,8 @@ export default {
         fadeIn: "fadeIn 0.5s ease-out forwards",
         pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         shimmer: "shimmer 2.5s infinite linear",
+        rotate: "rotate 20s linear infinite",
+        orbit: "orbit 10s linear infinite",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

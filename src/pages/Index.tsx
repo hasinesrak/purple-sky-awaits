@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Avatar from "@/components/Avatar";
 import EmailSignup from "@/components/EmailSignup";
+import SpaceBackground from "@/components/SpaceBackground";
 import { cn } from "@/lib/utils";
 
 const Index = () => {
@@ -44,6 +45,9 @@ const Index = () => {
     <div className="relative min-h-screen overflow-hidden bg-gradient-to-b from-dark-purple to-dark">
       {/* Stars background */}
       <div ref={starsRef} className="absolute inset-0 z-0"></div>
+      
+      {/* Space elements */}
+      <SpaceBackground />
       
       {/* Content container */}
       <div className="container relative z-10 px-6 mx-auto flex flex-col items-center justify-center min-h-screen py-20">
